@@ -12,7 +12,7 @@ static BENCHMARK_HELPER_INLINE __m256i _mm256_rotl_epi32(__m256i v, uint32_t r)
 }
 
 /* the most common form of implementation for 'rotl32' */
-static BENCHMARK_HELPER_INLINE inline uint32_t benchmark_example_rotl32(uint32_t v, uint32_t r)
+static BENCHMARK_HELPER_INLINE uint32_t benchmark_example_rotl32(uint32_t v, uint32_t r)
 {
     return (v << r) | (v >> (32 - r));
 }
