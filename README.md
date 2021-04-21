@@ -6,14 +6,16 @@
 
 # About 'cbench-x86'
 This is a simple header file targeting evaluation of computation overhead between C code snippets.
+
 It also contains some helper macros for implementing a benchmark easier, such as the CPU cache line alignment.
 
 # Supported environment
 * AMD64 (x86-64); must be compiled with GCC/CLANG.
-i386(x86) and MSVC supports are in the plan.
+* i386(x86) and MSVC supports are in the plan.
 
 # Example code
 Reference 'example_avx256rotl.c' source file.
+
 It is an example code for the performance comparison of an AVX2 based 'bit-rotate-to-left' implementation to the traditional 'bit-rotate-to-left'.
 
 # Contributing guide
